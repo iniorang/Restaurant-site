@@ -7,3 +7,6 @@
     object-fit: cover;
     filter: brightness(0.6);
 }
+.footer{
+    background-color: green;
+}
