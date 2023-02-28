@@ -1,12 +1,12 @@
 .c-slide{
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
 }
 .c-img{
     width: 100%;
     object-fit: cover;
     filter: brightness(0.6);
 }
-.footer{
-    background-color: green;
+.content-main{
+    margin: 3em 10em;
 }
