@@ -1,20 +1,31 @@
-.c-slide{
+.c-slide {
     width: 100vw;
     height: 100vh;
 }
-.c-img{
+
+.c-img {
     width: 100%;
     object-fit: cover;
     filter: brightness(0.6);
 }
-.navbar{
+
+.navbar {
     transition: all 0.5s;
 }
-.navbar-scrolled{
-    background-color:  black;
+
+.navbar-scrolled {
+    background-color: black;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
 }
-.content-about{
+
+.content-about {
     margin: 3em 10em;
     font-size: 20px;
+}
+
+/*Footer*/
+.footer-dark {
+    padding: 50px 0;
+    color: #f0f9ff;
+    background-color: #282d32;
 }
