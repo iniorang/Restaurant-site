@@ -8,6 +8,9 @@
     object-fit: cover;
     filter: brightness(0.6);
 }
+.caption{
+    color: white;
+}
 
 .navbar {
     transition: all 0.5s;
@@ -21,6 +24,9 @@
 .content-about {
     margin: 3em 10em;
     font-size: 20px;
+}
+.content-about .menu{
+    background-color: aquamarine;
 }
 
 /*Footer*/
