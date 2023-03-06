@@ -29,9 +29,12 @@
     background-color: aquamarine;
 }
 
+.hungry{
+    background-color: aqua;
+}
+
 /*Footer*/
 .footer {
-    margin-top: 20px;
     padding: 20px;
     color: azure;
     background-color: green;
