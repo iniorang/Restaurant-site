@@ -8,7 +8,8 @@
     object-fit: cover;
     filter: brightness(0.6);
 }
-.caption{
+
+.caption {
     color: white;
 }
 
@@ -25,12 +26,20 @@
     margin: 3em 10em;
     font-size: 20px;
 }
-.content-about .menu{
+
+.content-about .menu {
     background-color: aquamarine;
 }
 
-.hungry{
+.hungry {
     background-color: aqua;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+    filter: blur(2px);
 }
 
 /*Footer*/
