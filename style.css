@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .c-slide {
     width: 100vw;
     height: 100vh;
@@ -25,7 +30,7 @@
 
 .card-img-top {
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     object-fit: cover;
     filter: blur(2px);
 }
