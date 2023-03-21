@@ -13,7 +13,7 @@
 
 <body>
   <!--Navigation Bar Start-->
-  <nav class="navbar navbar-expand navbar-dark navbar-scrolled fixed-top" aria-label="Second navbar example">
+  <nav class="navbar navbar-expand navbar-dark navbar-scrolled sticky-top" aria-label="Second navbar example">
     <div class="container">
       <a class="navbar-brand " href="index.html">Warung Hati</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
@@ -24,83 +24,88 @@
       <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.php">Home</a>
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <!--End of Navbar-->
-    <div class="py-4">
-    <h1 class="fw-bold mb-2 display-5 text-center">Our Top Pick</h1>
-    <div class="container">
-      <ul class="nav justify-content-center nav-pills py-3 g-4">
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="pill" href="#drink">Drink</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" data-bs-toggle="pill" href="#food">Food</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="pill" href="#apetizer">Apetizer</a>
-        </li>
-      </ul>
-      <!--Tabs-->
-      <div class="tab-content">
-        <div class="tab-pane active" id="food">
+  <div class="container mt-5">
+    <div class="text-center">
+      <p>Menu</p>
+      <h4>Here our Best Menu</h4>
+    </div>
+    <ul class="nav nav-pills justify-content-center mt-3" id="Food-Tab">
+      <li class="nav-item">
+        <a href="#primary" class="nav-link active" data-bs-toggle="tab">Primary</a>
+      </li>
+      <li class="nav-item">
+        <a href="#snack" class="nav-link" data-bs-toggle="tab">Snack</a>
+      </li>
+      <li class="nav-item">
+        <a href="#side" class="nav-link" data-bs-toggle="tab">Side Dish</a>
+      </li>
+      <li class="nav-item">
+        <a href="#vegetable" class="nav-link" data-bs-toggle="tab">Vegetable</a>
+      </li>
+      <li class="nav-item">
+        <a href="#drink" class="nav-link" data-bs-toggle="tab">Drink</a>
+      </li>
+      <li class="nav-item">
+        <a href="#party" class="nav-link" data-bs-toggle="tab">Party</a>
+      </li>
+    </ul>
+    <div>
+      <div class="tab-content mt-3">
+        <div class="tab-pane active show" id="primary">
           <div class="container">
-            <div class="row g-3">
+            <div class="row">
               <div class="col">
                 <div class="card">
-                  <div class="card-body">
-                    This is some text within a card body.
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <figure class="figure">
-                    <img src="img/2. Menu Utama/Gado-Gado 3.png" class="figure-img img-fluid rounded-top" alt="...">
-                    <div class="px-3 mt-2">
-                      <h4>Gado-Gado</h4>
-                      <p class="opacity-50 best-capt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                        incidunt praesentium esse iure
-                        unde, in doloribus commodi fugiat nobis cupiditate repellendus expedita amet sunt vero assumenda
-                        nostrum voluptatum nisi! Eveniet?</p>
+                  <div class="row g-3">
+                    <div class="col">
+                      <div class="card-body">
+                        <h5 class="card-title">Alice Liddel</h5>
+                        <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
+                      </div>
                     </div>
-                  </figure>
-                </div>
+                    <div class="col-5">
+                        <img src="img/2. Menu Utama/Gado-Gado 3.png" class="card-img-top h-100" alt="...">
+                    </div>
+                  </div>
+              </div>
               </div>
               <div class="col">
-                <div class="card">
-                  <div class="card-body">
-                    This is some text within a card body.
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <div class="card-body">
-                    This is some text within a card body.
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
         </div>
-        <div class="tab-pane" id="drink">
-          <p>Test2</p>
+        <div class="tab-pane" id="snack">
+          Test2
         </div>
-        <div class="tab-pane" id="apetizer">
-          <p>Test3</p>
+        <div class="tab-pane" id="side">
+          Test3
+        </div>
+        <div class="tab-pane" id="vegetable">
+          Test4
+        </div>
+        <div class="tab-pane" id="drink">
+          Test5
+        </div>
+        <div class="tab-pane" id="party">
+          Test6
         </div>
       </div>
     </div>
   </div>
-
   <!--Footer-->
 </body>
 <script src="script.js">
