@@ -38,6 +38,10 @@ html, body {
     object-fit: cover;
     filter: blur(2px);
 }
+.food-card-img{
+    width: 9vw;
+    height: 20vh;
+}
 
 /*Footer*/
 .footer {
