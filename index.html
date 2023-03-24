@@ -41,32 +41,50 @@
   </nav>
   <!--End of Navbar-->
   <!--Slideshow start-->
-  <div id="bestofall" class="carousel slide" data-bs-ride="carousel">
+  <div id="bg-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#bg-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#bg-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#bg-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#bg-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
     <div class="carousel-inner">
-      <div class="carousel-item active c-slide">
-        <img class="img-carousel c-img" src="img/1. Front Page/Nasi Campur Bali 2.png" class="d-block w-100 " alt="...">
+      <div class="carousel-item front-img bg-img-4 active">
+        <!--<img class="img-carousel front-img" src="img/1. Front Page/Nasi Campur Bali 2.png" class="d-block w-100 " alt="...">-->
         <div class="caption carousel-caption position-absolute top-50 start-10 translate-middle-y text-start">
         </div>
       </div>
-      <div class="carousel-item c-slide">
-        <img class="img-carousel c-img" src="img/1. Front Page/Es Kuwut Bali.png" class="d-block w-100" alt="...">
+      <div class="carousel-item bg-img-2 front-img">
+        <!--<img class="img-carousel front-img" src="img/1. Front Page/Es Kuwut Bali.png" class="d-block w-100" alt="...">-->
         <div class="caption carousel-caption position-absolute top-50 start-10 translate-middle-y text-start">
         </div>
       </div>
-      <div class="carousel-item c-slide">
-        <img class="img-carousel c-img" src="img/1. Front Page/Bubur Madura.png" class="d-block w-100" alt="...">
+      <div class="carousel-item bg-img-1 front-img">
+        <!--<img class="img-carousel front-img" src="img/1. Front Page/Bubur Madura.png" class="d-block w-100" alt="...">-->
         <div class="caption carousel-caption position-absolute top-50 start-10 translate-middle-y text-start">
         </div>
       </div>
-      <div class="carousel-item c-slide">
-        <img class="img-carousel c-img" src="img/1. Front Page/Jajan Pasar 2.png" class="d-block w-100" alt="...">
+      <div class="carousel-item bg-img-4 front-img">
+        <!--<img class="img-carousel front-img" src="img/1. Front Page/Jajan Pasar 2.png" class="d-block w-100" alt="...">-->
         <div class="caption carousel-caption position-absolute top-50 start-10 translate-middle-y text-start">
         </div>
       </div>
-      <div class="caption carousel-caption position-absolute top-50 start-10 translate-middle-y text-start">
-        <h1 class="">Lorem Ipsum</h1>
+      <div class="carousel-caption">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, esse assumenda placeat corrupti expedita
+          necessitatibus laudantium nobis distinctio, ea id animi asperiores sit aliquid molestias porro veritatis ullam
+          suscipit unde.</p>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#bg-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bg-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
   <!--End of Slideshow-->
 
@@ -83,9 +101,7 @@
             incididunt ut labore et
             dolore magna aliqua. Sit amet porttitor eget dolor morbi. Etiam sit amet nisl purus in mollis nunc sed id.
             Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate. Sed adipiscing diam donec
-            adipiscing tristique risus nec. Placerat in egestas erat imperdiet sed. Aliquet sagittis id consectetur
-            purus ut faucibus pulvinar. Interdum posuere lorem ipsum dolor sit amet. Pellentesque habitant morbi
-            tristique senectus et. Nulla aliquet porttitor lacus luctus accumsan tortor posuere.
+            adipiscing tristique risus nec. Placerat in egestas erat imperdiet sed.
           </p>
           <div class="text-center">
             <a href="aboutus.html">
@@ -111,10 +127,10 @@
               <img src="img/2. Menu Utama/Gado-Gado 3.png" class="figure-img img-fluid rounded-top" alt="...">
               <div class="px-3 mt-2">
                 <h4>Gado-Gado</h4>
-                <p class="opacity-50 best-capt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                <figcaption class="blockquote-footer mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                   incidunt praesentium esse iure
                   unde, in doloribus commodi fugiat nobis cupiditate repellendus expedita amet sunt vero assumenda
-                  nostrum voluptatum nisi! Eveniet?</p>
+                  nostrum voluptatum nisi! Eveniet?</figcaption>
               </div>
             </figure>
           </div>
@@ -126,10 +142,10 @@
               <img src="img/2. Menu Utama/Gado-Gado 3.png" class="figure-img img-fluid rounded-top" alt="...">
               <div class="px-3 mt-2">
                 <h4>Gado-Gado</h4>
-                <p class="opacity-50 best-capt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                <figcaption class="blockquote-footer mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                   incidunt praesentium esse iure
                   unde, in doloribus commodi fugiat nobis cupiditate repellendus expedita amet sunt vero assumenda
-                  nostrum voluptatum nisi! Eveniet?</p>
+                  nostrum voluptatum nisi! Eveniet?</figcaption>
               </div>
             </figure>
           </div>
@@ -141,10 +157,10 @@
               <img src="img/2. Menu Utama/Gado-Gado 3.png" class="figure-img img-fluid rounded-top" alt="...">
               <div class="px-3 mt-2">
                 <h4>Gado-Gado</h4>
-                <p class="opacity-50 best-capt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                <figcaption class="blockquote-footer mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                   incidunt praesentium esse iure
                   unde, in doloribus commodi fugiat nobis cupiditate repellendus expedita amet sunt vero assumenda
-                  nostrum voluptatum nisi! Eveniet?</p>
+                  nostrum voluptatum nisi! Eveniet?</figcaption>
               </div>
             </figure>
           </div>
@@ -156,10 +172,10 @@
               <img src="img/2. Menu Utama/Gado-Gado 3.png" class="figure-img img-fluid rounded-top" alt="...">
               <div class="px-3 mt-2">
                 <h4>Gado-Gado</h4>
-                <p class="opacity-50 best-capt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                <figcaption class="blockquote-footer mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                   incidunt praesentium esse iure
                   unde, in doloribus commodi fugiat nobis cupiditate repellendus expedita amet sunt vero assumenda
-                  nostrum voluptatum nisi! Eveniet?</p>
+                  nostrum voluptatum nisi! Eveniet?</figcaption>
               </div>
             </figure>
           </div>
@@ -220,7 +236,7 @@
               <i class="fa-brands fa-tiktok px-2 fa-xl social"></i>
             </a>
           </div>
-          <hr class="mt-1"/>
+          <hr class="mt-1" />
           <div class="text-center">
             <p>@copyright by Warung Hati. Designed by cold_rawon</p>
           </div>
@@ -229,7 +245,15 @@
     </footer>
   </div>
 </body>
-<script src="script.js">
+<script>
+  const navEl = document.querySelector('.navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 56) {
+      navEl.classList.add('navbar-scrolled');
+    } else if (window.scrollY < 56) {
+      navEl.classList.remove('navbar-scrolled');
+    }
+  });
 </script>
 
 </html>
