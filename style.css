@@ -228,7 +228,7 @@ body {
         display: -ms-flexbox;
         display: flex;
         position: relative;
-        height: 235px;
+        height: 200px;
     }
 
     .food-card--vertical .food-card_img img {
