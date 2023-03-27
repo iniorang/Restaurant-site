@@ -1,3 +1,10 @@
+:root{
+    --color1: #32502E;
+    --color2: #406343;
+    --color3: #ECE7B4;
+    --color4: #F3EFCC;
+}
+
 html,
 body {
     max-width: 100%;
@@ -59,12 +66,17 @@ body {
 }
 
 /*End section of BG Carousel*/
-.navbar {
+.navbar a{
     transition: all 0.5s;
+    color: var(--color4);
 }
 
+.navbar .nav-item.active a {
+    color: red;
+  }
+
 .navbar-scrolled {
-    background-color: black;
+    background-color: var(--color1);
     box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
 }
 
@@ -242,7 +254,7 @@ body {
 /*Footer*/
 .footer {
     color: azure;
-    background-color: green;
+    background-color: var(--color1);
 }
 
 .social {
