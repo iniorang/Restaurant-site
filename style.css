@@ -276,29 +276,22 @@ body {
     }
 }
 
-/*Tabs on Food*/
-.nav-tabs .nav-item .nav-link {
-    position: relative;
-    padding-left: 20px;
-    color: black;
+/*Tabs on Category*/
+.nav-colorfirst .nav-item a{
+    color: gray;
+    font-size: 30px;
 }
 
-.nav-tabs .nav-item .nav-link:before {
-    content: attr(href);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #777;
+.nav-colorfirst .nav-item a:hover{
+    color: var(--color2);
+    transition: color 1s ease;
 }
 
-.nav-tabs .nav-item .nav-link.active:before {
-    color: #000;
+.nav-colorfirst .nav-item a.active{
+    color: var(--color2);
+    font-size: 30px;
+    transition: all 1s;
+    text-decoration: underline;
 }
 
 
