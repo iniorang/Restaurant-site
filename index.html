@@ -7,10 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-  <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="fontawesome/css/brands.css" rel="stylesheet">
-  <link rel="stylesheet" href="fontawesome/css/solid.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Home</title>
 </head>
 
@@ -25,7 +29,7 @@
         aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav ml-auto ms-3">
           <li class="nav-item">
@@ -41,51 +45,17 @@
       </div>
     </div>
   </nav>
-  
+
   <!--End of Navbar-->
   <!--Slideshow start-->
-  <div id="bg-carousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#bg-carousel" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#bg-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#bg-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#bg-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item front-img bg-img-4 active">
-        <!--<img class="img-carousel front-img" src="img/1. Front Page/Nasi Campur Bali 2.png" class="d-block w-100 " alt="...">-->
-        <div class="caption carousel-caption position-absolute top-50 start-10 translate-middle-y text-start">
-        </div>
-      </div>
-      <div class="carousel-item bg-img-2 front-img">
-        <!--<img class="img-carousel front-img" src="img/1. Front Page/Es Kuwut Bali.png" class="d-block w-100" alt="...">-->
-        <div class="caption carousel-caption position-absolute top-50 start-10 translate-middle-y text-start">
-        </div>
-      </div>
-      <div class="carousel-item bg-img-1 front-img">
-        <!--<img class="img-carousel front-img" src="img/1. Front Page/Bubur Madura.png" class="d-block w-100" alt="...">-->
-        <div class="caption carousel-caption position-absolute top-50 start-10 translate-middle-y text-start">
-        </div>
-      </div>
-      <div class="carousel-item bg-img-4 front-img">
-        <!--<img class="img-carousel front-img" src="img/1. Front Page/Jajan Pasar 2.png" class="d-block w-100" alt="...">-->
-        <div class="caption carousel-caption position-absolute top-50 start-10 translate-middle-y text-start">
-        </div>
-      </div>
-      <div class="carousel-caption">
-        <h1>Lorem Ipsum</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus.</p>
+  <div class="homehead" style="background-image: url(./img/Front_Page/BuburMadura.png);">
+    <div class="homehead-overlay d-inline-flex p-2 align-items-center">
+      <div class="container">
+        <h1>Test</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maxime cupiditate voluptatibus hic ipsa in
+          accusamus minima, soluta quis, dicta alias ipsum ex sint a doloremque iure corporis architecto explicabo.</h2>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#bg-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#bg-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
   <!--End of Slideshow-->
 
@@ -102,88 +72,40 @@
           <h2 class="fw-bold">About Us</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut odio vel urna tristique bibendum vel vel
             magna. Proin in sem euismod, convallis massa vel, pharetra urna.</p>
-            <div class="d-flex justify-content-center align-items-center">
-              <a href="about.html" class="btn btn-primary mt-3">Learn More</a>
-            </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="about.html" class="btn btn-primary mt-3">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
   <!--End Quick about us-->
 
   <!--Best Pick-->
   <div class="container py-4">
-    <h1 class="display-5 text-center fw-bold">Our recommendation</h1>
-    <!--Tabs-->
-    <div class="container my-3">
-      <div class="row gy-3">
-        <div class="col-md-3">
-          <h4>Food</h4>
-          <div class="card">
-            <figure class="figure">
-              <img src="img/2. Menu Utama/Gado-Gado 3.png" class="figure-img img-fluid rounded-top" alt="...">
-              <div class="px-3 mt-2">
-                <h4>Gado-Gado</h4>
-                <figcaption class="blockquote-footer mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ullam
-                  incidunt praesentium esse iure
-                  unde, in doloribus commodi fugiat nobis cupiditate repellendus expedita amet sunt vero assumenda
-                  nostrum voluptatum nisi! Eveniet?</figcaption>
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <h4>Drink</h4>
-          <div class="card">
-            <figure class="figure">
-              <img src="img/2. Menu Utama/Gado-Gado 3.png" class="figure-img img-fluid rounded-top" alt="...">
-              <div class="px-3 mt-2">
-                <h4>Gado-Gado</h4>
-                <figcaption class="blockquote-footer mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ullam
-                  incidunt praesentium esse iure
-                  unde, in doloribus commodi fugiat nobis cupiditate repellendus expedita amet sunt vero assumenda
-                  nostrum voluptatum nisi! Eveniet?</figcaption>
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <h4>Snack</h4>
-          <div class="card">
-            <figure class="figure">
-              <img src="img/2. Menu Utama/Gado-Gado 3.png" class="figure-img img-fluid rounded-top" alt="...">
-              <div class="px-3 mt-2">
-                <h4>Gado-Gado</h4>
-                <figcaption class="blockquote-footer mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ullam
-                  incidunt praesentium esse iure
-                  unde, in doloribus commodi fugiat nobis cupiditate repellendus expedita amet sunt vero assumenda
-                  nostrum voluptatum nisi! Eveniet?</figcaption>
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <h4>Party</h4>
-          <div class="card">
-            <figure class="figure">
-              <img src="img/2. Menu Utama/Gado-Gado 3.png" class="figure-img img-fluid rounded-top" alt="...">
-              <div class="px-3 mt-2">
-                <h4>Gado-Gado</h4>
-                <figcaption class="blockquote-footer mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ullam
-                  incidunt praesentium esse iure
-                  unde, in doloribus commodi fugiat nobis cupiditate repellendus expedita amet sunt vero assumenda
-                  nostrum voluptatum nisi! Eveniet?</figcaption>
-              </div>
-            </figure>
-          </div>
-        </div>
+    <div>
+      <h1 class="display-5 text-center fw-bold">Our recommendation</h1>
+    </div>
+  </div>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item rec-image bg-img-1 active">
+      </div>
+      <div class="carousel-item rec-image bg-img-2">
+      </div>
+      <div class="carousel-item rec-image bg-img-3">
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
   <!--End of Best Pick-->
   <!--Contact-->
@@ -209,7 +131,7 @@
         <div class="col-md-4">
           <span class="fa-stack fa-5x mb-4">
             <i class="fa-solid fa-square fa-stack-2x"></i>
-            <i class="fa-regular fa-location-dot fa-stack-1x fa-inverse"></i>
+            <i class="fa-solid fa-map fa-stack-1x fa-inverse"></i>
           </span>
           <h4>Coming soon</h4>
         </div>
