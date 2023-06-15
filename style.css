@@ -5,6 +5,7 @@
     --color4: #F3EFCC;
 }
 
+
 html,
 body {
     max-width: 100%;
@@ -64,7 +65,7 @@ body {
 }
 
 .navbar-scrolled {
-    background-color: var(--color1);
+    background-color: var(--color2);
     box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
 }
 
@@ -78,6 +79,30 @@ body {
 .navbar-brand:focus {
     color: var(--color3) !important;
     transition: color 0.3s ease-in-out;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.navbar .navbar-toggler{
+    border: 1px solid rgba(255,255,255,1);
+}
+
+.img-rest{
+    max-width: 20vw;
+    height: 95vh;
+    object-fit: cover;
+}
+
+.rest{
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: var(--color2);
+    }
 }
 
 /*End of Navbar*/
@@ -274,14 +299,14 @@ body {
 
 /*End of tabs*/
 
-.fa-square{
-    color: var(--color1);
+.fa-square {
+    color: var(--color2);
 }
 
 /*Footer*/
 .footer {
     color: white;
-    background-color: var(--color1);
+    background-color: var(--color2);
 }
 
 .social {
