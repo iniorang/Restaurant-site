@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 :root {
     --color1: #32502E;
     --color2: #406343;
@@ -5,12 +7,14 @@
     --color4: #F3EFCC;
 }
 
+*{
+    font-family: 'Chivo', sans-serif;
+}
 
 html,
 body {
     max-width: 100%;
     overflow-x: hidden;
-    font-family: 'Chivo', sans-serif;
 }
 
 /*BG on index*/
@@ -22,11 +26,17 @@ body {
     /* text-shadow: 2px 2px 2px rgba(0,0,0,.2); */
 }
 
-.homehead-overlay {
+.homehead-overlay{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .45);
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.homehead-overlay h1{
+    font-size: 20ex;
+    font-family: 'Dancing Script', cursive;
+    color: var(--color3);
 }
 
 @media (max-width:768px) {
@@ -40,10 +50,11 @@ body {
     h4,
     h5,
     h6 {
-        font-size: calc(1.525rem + 3.3vw);
+        font-size: calc(1.525rem + 5.3vw);
 
     }
 }
+
 
 /*End Section of BG on index*/
 
@@ -90,13 +101,36 @@ body {
 }
 
 .img-rest{
-    max-width: 20vw;
-    height: 95vh;
+    width: 8cm;
+    height: 15cm;
     object-fit: cover;
+    @media (max-width:768px) {
+        width: 4cm;
+    }
+}
+.movetop{
+    margin-top: 50px;
+    @media (max-width:768px) {
+        margin-top: 0px;
+    }
 }
 
-.rest{
-    padding: 20px;
+.heading {
+    font-size: 90px;
+    font-family: 'Dancing Script', cursive;
+    @media (max-width:768px) {
+        font-size: 56px;
+    }
+}
+
+
+.about{
+    margin-top: 65px;
+}
+.capt{
+    font-size: 20px;
+    /* text-align: left; */
+    line-height: 40px;
 }
 
 @media (max-width: 768px) {
@@ -108,25 +142,18 @@ body {
 /*End of Navbar*/
 
 /*Carousel recomendation*/
-.bg-img-1 {
-    background-image: url(./img/Menu_Utama/Laksa\ Medan.png);
-}
 
-.bg-img-2 {
-    background-image: url(./img/Front_Page/EsKuwutBali.png);
-}
+.c-item {
+    height: 18cm;
+  }
+  
+  .c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
 
-.bg-img-3 {
-    background-image: url(./img/Front_Page/JajanPasar.png);
-}
-
-.rec-image {
-    height: 50vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
+  
 /* Menu Card*/
 .food-card {
     background: #fff;

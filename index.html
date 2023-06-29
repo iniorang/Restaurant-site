@@ -31,9 +31,8 @@
         aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarsExample02">
-        <ul class="navbar-nav ml-auto ms-3">
+        <ul class="navbar-nav me-auto ms-1">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
@@ -52,66 +51,100 @@
   <!--Slideshow start-->
   <div class="homehead" style="background-image: url(./img/Front_Page/BuburMadura.png);">
     <div class="homehead-overlay d-inline-flex p-2 align-items-center">
-      <div class="container text-center w-50">
-        <h1>Test</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maxime cupiditate voluptatibus hic ipsa in
-          accusamus minima, soluta quis, dicta alias ipsum ex sint a doloremque iure corporis architecto explicabo.</p>
+      <div class="container w-75 text-center">
+        <h1 class="text-center">Warung Hati</h1>
+        <h5 class="text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit"</h5>
+        <a href="menu.html" class="btn btn-warning btn-lg mt-4"><i class="fa-solid fa-utensils"></i> Menu Kami</a>
       </div>
     </div>
   </div>
   <!--End of Slideshow-->
 
   <!--Quick About us-->
-  <div class="container my-4">
+  <div class="container my-5">
     <div class="row">
-      <div class="col-md-6 px-3">
-        <img src="img/Jajanan/Batagor.png" class="img-rest">
-        <img src="img/Front_Page/EsKuwutBali.png" class="img-rest">
+      <div class="col-md-6 g-0 text-center">
+        <img src="img/Menu_Utama/Gado-Gado 3.png" class="img-rest">
+        <img src="img/5. Ala Carte/Sayur/Ayam Goreng.png" class="img-rest" style="margin-top: 50px;">
       </div>
-      <div class="col-md-6 px-3">
-        <h1 style="font-size: 90px;">Selamat Datang</h1>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus corporis nulla nisi laudantium
-          alias ratione, vel ipsa, praesentium officiis adipisci obcaecati minus placeat magnam ex inventore laborum
-          facilis quisquam?</p>
+      <div class="col-md-6">
+        <div class="container start-50 mt-5 mt-md-0">
+          <h1 class="heading">Selamat Datang</h1>
+          <p class="capt w-75"> Restaurant is a place for simplicity. Good food, good beer,
+            and good service. Simple is the
+            name of the game, and we’re good at finding it in all the right places, even in your dining experience.
+            We’re a small group from Denver, Colorado who make simple food possible. Come join us and see what
+            simplicity tastes like.</p>
+        </div>
       </div>
     </div>
   </div>
   <!--End Quick about us-->
 
   <!--Best Pick-->
-  <h1 class="display-5 text-center fw-bold mb-3">Our recommendation</h1>
-  </div>
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item rec-image bg-img-1 active">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+  <div class="my-4">
+    <div class="my-3">
+      <h1 class="heading text-center">Menu Andalan</h1>
+    </div>
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="img/Menu_Utama/Gado-Gado 3.png" class="d-block w-100 c-img" alt="Slide 1">
+          <div class="carousel-caption top-50 translate-middle-y text-start">
+            <h1 class="display-1 fw-bolder text-capitalize">Gado-Gado</h1>
+            <hr class="w-50">
+            <p class="fs-5 w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut aperiam saepe
+              veritatis
+              eius deleniti dolor illum ullam earum, harum perferendis nam nostrum culpa consectetur sit officia commodi
+              ducimus. Qui?</p>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="img/Jajanan/Batagor.png" class="d-block w-100 c-img" alt="Slide 2">
+          <div class="carousel-caption top-50 translate-middle-y text-start">
+            <h1 class="display-1 fw-bolder text-capitalize">Batagor</h1>
+            <hr class="w-50">
+            <p class="fs-5 w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut aperiam saepe
+              veritatis
+              eius deleniti dolor illum ullam earum, harum perferendis nam nostrum culpa consectetur sit officia commodi
+              ducimus. Qui?</p>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="img/Menu_Utama/Mie Kocok Bandung.png" class="d-block w-100 c-img" alt="Slide 3">
+          <div class="carousel-caption top-50 translate-middle-y text-start">
+            <h1 class="display-1 fw-bolder text-capitalize">Mie Kocok Bandung</h1>
+            <hr class="w-50">
+            <p class="fs-5 w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut aperiam saepe
+              veritatis
+              eius deleniti dolor illum ullam earum, harum perferendis nam nostrum culpa consectetur sit officia commodi
+              ducimus. Qui?</p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item rec-image bg-img-2">
-      </div>
-      <div class="carousel-item rec-image bg-img-3">
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
   <!--End of Best Pick-->
   <!--Contact-->
-  <div class="px-4 py-4 my-1">
-    <h1 class="display-5 text-center fw-bold">Contact Us</h1>
-    <h3 class="display-5 text-center fw-lighter ">For reservation and more information</h3>
+  <div class="container my-5">
+    <h1 class="display-3 text-center fw-bold">Chat sama kita</h1>
+    <h3 class="display-5 text-center fw-lighter">Untuk reservasi sama informasi tambahan</h3>
     <div class="container mt-2 text-center">
-      <div class="row py-5">
+      <div class="row my-5">
         <div class="col-md-4">
           <span class="fa-stack fa-5x mb-4">
             <i class="fa-solid fa-square fa-stack-2x"></i>
