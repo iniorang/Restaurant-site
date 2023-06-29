@@ -101,7 +101,7 @@ body {
 }
 
 .img-rest{
-    width: 8cm;
+    width: 7cm;
     height: 15cm;
     object-fit: cover;
     @media (max-width:768px) {
