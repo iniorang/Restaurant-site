@@ -5,9 +5,10 @@
     --color2: #406343;
     --color3: #ECE7B4;
     --color4: #F3EFCC;
+    
 }
 
-*{
+* {
     font-family: 'Chivo', sans-serif;
 }
 
@@ -26,14 +27,14 @@ body {
     /* text-shadow: 2px 2px 2px rgba(0,0,0,.2); */
 }
 
-.homehead-overlay{
+.homehead-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .6);
 }
 
-.homehead-overlay h1{
+.homehead-overlay h1 {
     font-size: 20ex;
     font-family: 'Dancing Script', cursive;
     color: var(--color3);
@@ -54,6 +55,44 @@ body {
 
     }
 }
+
+.abouthead {
+    background-size: cover;
+    min-height: 40vh;
+    position: relative;
+    color: white;
+    /* text-shadow: 2px 2px 2px rgba(0,0,0,.2); */
+}
+
+.abouthead-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.abouthead-overlay h1 {
+    font-size: 10ex;
+    font-family: 'Dancing Script', cursive;
+    color: var(--color3);
+}
+
+@media (max-width:768px) {
+    .abouthead {
+        min-height: 100vh;
+    }
+
+    .abouthead-overlay h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: calc(1.525rem + 5.3vw);
+
+    }
+}
+
 
 
 /*End Section of BG on index*/
@@ -96,38 +135,36 @@ body {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
 
-.navbar .navbar-toggler{
-    border: 1px solid rgba(255,255,255,1);
+.navbar .navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.img-rest{
+.img-rest {
     width: 7cm;
     height: 15cm;
     object-fit: cover;
+
     @media (max-width:768px) {
         width: 4cm;
     }
 }
-.movetop{
-    margin-top: 50px;
-    @media (max-width:768px) {
-        margin-top: 0px;
-    }
-}
+
 
 .heading {
     font-size: 90px;
     font-family: 'Dancing Script', cursive;
+
     @media (max-width:768px) {
         font-size: 56px;
     }
 }
 
 
-.about{
+.about {
     margin-top: 65px;
 }
-.capt{
+
+.capt {
     font-size: 20px;
     /* text-align: left; */
     line-height: 40px;
@@ -145,165 +182,26 @@ body {
 
 .c-item {
     height: 18cm;
-  }
-  
-  .c-img {
+}
+
+.c-img {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6);
-  }
+}
 
-  
+.moreabout{
+    font-size: 20px;
+}
+
 /* Menu Card*/
 .food-card {
-    background: #fff;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 30px;
-    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-    -webkit-transition: 0.1s;
-    transition: 0.1s;
+    width: 35vw;
+    
 }
-
-.food-card:hover {
-    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.food-card .food-card_img {
-    display: block;
-    position: relative;
-}
-
-.food-card .food-card_img img {
-    width: 100%;
-    height: 200px;
-    -o-object-fit: cover;
+.food-card img{
+    height: 7cm;
     object-fit: cover;
-}
-
-.food-card .food-card_img i {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: #fff;
-    font-size: 25px;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-}
-
-.food-card .food-card_img i:hover {
-    top: 18px;
-    right: 28px;
-    font-size: 29px;
-}
-
-.food-card .food-card_content {
-    padding: 15px;
-}
-
-.food-card .food-card_content .food-card_title-section {
-    height: 100px;
-    overflow: hidden;
-}
-
-.food-card .food-card_content .food-card_title-section .food-card_title {
-    font-size: 24px;
-    color: #333;
-    font-weight: 500;
-    display: block;
-    line-height: 1.3;
-    margin-bottom: 8px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.food-card .food-card_content .food-card_title-section .food-card_author {
-    font-size: 15px;
-    display: block;
-}
-
-.food-card .food-card_content .food-card_bottom-section .space-between {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.food-card .food-card_content .food-card_bottom-section .food-card_subscribers {
-    margin-left: 17px;
-}
-
-.food-card .food-card_content .food-card_bottom-section .food-card_subscribers img,
-.food-card .food-card_content .food-card_bottom-section .food-card_subscribers .food-card_subscribers-count {
-    height: 45px;
-    width: 45px;
-    border-radius: 45px;
-    border: 3px solid #fff;
-    margin-left: -17px;
-    float: left;
-    background: #f5f5f5;
-}
-
-.food-card .food-card_content .food-card_bottom-section .food-card_subscribers .food-card_subscribers-count {
-    position: relative;
-}
-
-.food-card .food-card_content .food-card_bottom-section .food-card_subscribers .food-card_subscribers-count span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-size: 13px;
-}
-
-.food-card .food-card_content .food-card_bottom-section .food-card_price {
-    font-size: 28px;
-    font-weight: 500;
-    color: var(--color2);
-}
-
-.food-card .food-card_content .food-card_bottom-section .food-card_order-count {
-    width: 130px;
-}
-
-.food-card .food-card_content .food-card_bottom-section .food-card_order-count input {
-    background: #f5f5f5;
-    border-color: #f5f5f5;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    text-align: center;
-}
-
-.food-card .food-card_content .food-card_bottom-section .food-card_order-count button {
-    border-color: #f5f5f5;
-    border-width: 3px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-@media (min-width: 992px) {
-    .food-card--vertical {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        position: relative;
-        height: 200px;
-    }
-
-    .food-card--vertical .food-card_img img {
-        width: 200px;
-        height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
 }
 
 /*Tabs on Category*/
@@ -339,3 +237,4 @@ body {
 .social {
     color: white;
 }
+
