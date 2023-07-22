@@ -195,10 +195,10 @@ body {
 }
 
 /* Menu Card*/
-.food-card {
+/* .food-card {
     width: 35vw;
     
-}
+} */
 .food-card img{
     height: 7cm;
     object-fit: cover;
