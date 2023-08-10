@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
 
 :root {
     --color1: #32502E;
     --color2: #406343;
     --color3: #ECE7B4;
     --color4: #F3EFCC;
-    
+
 }
 
 * {
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html,
@@ -151,8 +152,8 @@ body {
 
 
 .heading {
-    font-size: 90px;
-    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    font-family: 'Lobster', cursive;
 
     @media (max-width:768px) {
         font-size: 56px;
@@ -190,18 +191,25 @@ body {
     filter: brightness(0.6);
 }
 
-.moreabout{
+.moreabout {
     font-size: 20px;
 }
 
 /* Menu Card*/
-/* .food-card {
-    width: 35vw;
-    
-} */
-.food-card img{
+.food-card {
+    border-radius: 0px;
+
+}
+
+.food-card img {
     height: 7cm;
     object-fit: cover;
+}
+
+/* Plans card */
+.card-body.meal-plans {
+    border-radius: 0%;
+    height: 180px;
 }
 
 /*Tabs on Category*/
@@ -237,4 +245,3 @@ body {
 .social {
     color: white;
 }
-
