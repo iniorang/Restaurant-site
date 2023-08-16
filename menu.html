@@ -15,12 +15,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Home</title>
+  <title>Menu</title>
 </head>
 
 <body>
   <!--Navigation Bar Start-->
-  <nav class="navbar navbar-expand navbar-scrolled" aria-label="Second navbar example">
+  <nav class="navbar navbar-expand-md fixed-top navbar-scrolled" aria-label="Second navbar example">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <h3>Warung Hati</h3>
@@ -29,14 +29,16 @@
         aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExample02">
-        <ul class="navbar-nav ml-auto ms-3">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarsExample02">
+        <ul class="navbar-nav me-auto ms-1">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mealplans.html">Meal Plans</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="aboutus.html">About Us</a>
@@ -47,690 +49,700 @@
   </nav>
   <!--End of Navbar-->
   <!--Tabs of category-->
-  <div class="container mt-5">
-    <div class="text-center">
-      <h1 class="heading">Menu terbaik kami</h1>
+  <div class="abouthead" style="background-image: url(./img/Front_Page/NasiCampurBali.png);">
+    <div class="abouthead-overlay d-inline-flex p-2 align-items-center">
+      <div class="container w-75 text-center ">
+        <h1 class="text-center">Menu of Good Food and Beverage</h1>
+        <div class="container mt-3">
+          <ul class="nav nav-colorfirst justify-content-center mt-3 " id="Food-Tab">
+            <li class="nav-item">
+              <a href="#primary" class="nav-link active" data-bs-toggle="tab">
+                <p>Main</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#snack" class="nav-link" data-bs-toggle="tab">
+                <P>Snack</P>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#side" class="nav-link" data-bs-toggle="tab">
+                <p>Side</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#vegetable" class="nav-link" data-bs-toggle="tab">
+                <p>Veggies</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#drink" class="nav-link" data-bs-toggle="tab">
+                <p>Beverage</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#party" class="nav-link" data-bs-toggle="tab">
+                <p>Party</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <ul class="nav nav-colorfirst justify-content-center mt-3 " id="Food-Tab">
-      <li class="nav-item">
-        <a href="#primary" class="nav-link active" data-bs-toggle="tab">
-          <p>Utama</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#snack" class="nav-link" data-bs-toggle="tab">
-          <P>Snack</P>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#side" class="nav-link" data-bs-toggle="tab">
-          <p>Pendamping</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#vegetable" class="nav-link" data-bs-toggle="tab">
-          <p>Sayur</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#drink" class="nav-link" data-bs-toggle="tab">
-          <p>Minuman</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#party" class="nav-link" data-bs-toggle="tab">
-          <p>Untuk Acara</p>
-        </a>
-      </li>
-    </ul>
-    <div class="tab-content mb-5 mt-3">
-      <div class="tab-pane active show" id="primary">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Asinan Betawi.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Asinan Betawi</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Gado-Gado 3.png" class="card-img-top">
-                <div class="card-body">
-                  <h2 class="card-title">Gado-Gado</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Kupat Tahu Magelang 1.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Kupat Tahu Magelang</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Laksa Medan.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Laksa Medan</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Mie Kocok Bandung.png" class="card-img-top" style="object-position: 50% 35%;">
-                <div class="card-body">
-                  <h2 class="card-title">Mie Kocok Bandung</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Nasi Betutu.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Nasi Betutu</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Nasi Gudeg Jogja.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Nasi Gudeg</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Nasi Liwet.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Nasi Liwet</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Nasi Pecel 2.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Nasi Pecel</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Nasi Tutug Oncom.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Nasi Tutug Oncom</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Nasi Uduk.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Nasi Uduk</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Soto Ayam.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Soto Ayam</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Menu_Utama/Soto Betawi 2.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Soto Betawi</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
+  </div>
+  <div class="tab-content my-5">
+    <div class="tab-pane active show" id="primary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Asinan Betawi.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Asinan Betawi</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="tab-pane" id="snack">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Asinan Bogor (2).png" class="card-img-top" style="object-position: 50% 50%;">
-                <div class="card-body">
-                  <h2 class="card-title">Asinan Bogor</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Batagor.png" class="card-img-top" style="object-position: 50% 100%;">
-                <div class="card-body">
-                  <h2 class="card-title">Batagor</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Bika Ambon.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Bika Ambon</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Bubur .png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Bubur</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Combro.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Combro</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Jajan Pasar 5.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Jajan Pasar</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Kue Lumpang Pandan.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Kue Lumpang Pandan</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Lumpia.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Lumpia</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Lumpia.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Lumpia</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Lupis Ketan.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Lupis Ketan</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Pempek Palembang.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Pempek Palembang</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Rujak Buah 2.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Rujak Buah</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Serabi Petulo.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Serabi Petulo</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Siomay Bandung 5.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Siomay Bandung</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Tahu Gejrot 1.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Tahu Gejrot</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Jajanan/Tauwa.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Tauwa</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Gado-Gado 3.png" class="card-img-top">
+              <div class="card-body">
+                <h2 class="card-title">Gado-Gado</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="tab-pane" id="side">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Ayam Bakar.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Ayam Bakar</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Ayam Betutu.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Ayam Betutu</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Ayam Goreng.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Ayam Goreng</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Iga Penyet.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Iga Penyet</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Ikan Goreng.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Ikan Goreng</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Ikan With Dabu Sambal.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Ikan with Sambal Dabu</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Pampis Cakalang.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Pampis Cakalang</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Pepes Ikan.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Pepes Ikan</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Pepes Tahu 3.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Pepes Tahu</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Rendang 2.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Rendang</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Sate Ayam 1.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Sate Ayam</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Sate Lilit.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Sate Lilit</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Tahu Goreng.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Tahu Goreng</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Lauk/Tempe Orek.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Tempe Orek</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-          </div> 
-        </div>
-      </div>
-      <div class="tab-pane" id="vegetable">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Sayur/Lalapan.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Lalapan</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Sayur/Oncom Leunca.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Oncom</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Sayur/Sayur Asem.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Sayur Asem</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Sayur/Sayur Bayam 3.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Sayur Bayem</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Sayur/Sayur Lodeh.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Sayur Lodeh</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Sayur/Sayur Pecel.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Sayur Pecel</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Sayur/Sayur Sop.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Soup</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/5. Ala Carte/Sayur/Tumis Bunga Pepaya.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Tumis Bunga Pepeaya</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Kupat Tahu Magelang 1.png" class="card-img-top"
+                style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Kupat Tahu Magelang</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="tab-pane" id="drink">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Minuman/Bandrek.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Bandrek</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Minuman/Es Campur.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Es Campur</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Minuman/Es Cendol.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Es Cendol</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Minuman/Es Cincau 2.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Es Cincau</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Minuman/Es Dawet 4.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Es Dawet</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Minuman/Es Puter.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Es Puter</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Minuman/Es Teler.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Es Teler</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Minuman/Tauwa.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Tauwa</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Laksa Medan.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Laksa Medan</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="tab-pane" id="party">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Perayaan/Nasi Bancaan.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Nasi Bancaan</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Mie Kocok Bandung.png" class="card-img-top" style="object-position: 50% 35%;">
+              <div class="card-body">
+                <h2 class="card-title">Mie Kocok Bandung</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
               </div>
             </div>
-            <div class="col">
-              <div class="card food-card">
-                <img src="img/Perayaan/Nasi Kuning 3.png" class="card-img-top" style="object-position: 50% 75%;">
-                <div class="card-body">
-                  <h2 class="card-title">Nasi Kuning</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
-                    Qui, quos!.</p>
-                </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Nasi Betutu.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Nasi Betutu</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Nasi Gudeg Jogja.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Nasi Gudeg</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Nasi Liwet.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Nasi Liwet</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Nasi Pecel 2.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Nasi Pecel</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Nasi Tutug Oncom.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Nasi Tutug Oncom</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Nasi Uduk.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Nasi Uduk</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Soto Ayam.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Soto Ayam</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Menu_Utama/Soto Betawi 2.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Soto Betawi</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="tab-pane" id="snack">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Asinan Bogor (2).png" class="card-img-top" style="object-position: 50% 50%;">
+              <div class="card-body">
+                <h2 class="card-title">Asinan Bogor</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Batagor.png" class="card-img-top" style="object-position: 50% 100%;">
+              <div class="card-body">
+                <h2 class="card-title">Batagor</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Bika Ambon.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Bika Ambon</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Bubur .png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Bubur</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Combro.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Combro</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Jajan Pasar 5.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Jajan Pasar</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Kue Lumpang Pandan.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Kue Lumpang Pandan</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Lumpia.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Lumpia</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Lumpia.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Lumpia</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Lupis Ketan.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Lupis Ketan</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Pempek Palembang.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Pempek Palembang</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Rujak Buah 2.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Rujak Buah</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Serabi Petulo.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Serabi Petulo</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Siomay Bandung 5.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Siomay Bandung</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Tahu Gejrot 1.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Tahu Gejrot</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Jajanan/Tauwa.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Tauwa</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="side">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Ayam Bakar.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Ayam Bakar</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Ayam Betutu.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Ayam Betutu</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Ayam Goreng.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Ayam Goreng</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Iga Penyet.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Iga Penyet</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Ikan Goreng.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Ikan Goreng</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Ikan With Dabu Sambal.png" class="card-img-top"
+                style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Ikan with Sambal Dabu</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Pampis Cakalang.png" class="card-img-top"
+                style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Pampis Cakalang</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Pepes Ikan.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Pepes Ikan</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Pepes Tahu 3.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Pepes Tahu</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Rendang 2.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Rendang</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Sate Ayam 1.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Sate Ayam</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Sate Lilit.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Sate Lilit</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Tahu Goreng.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Tahu Goreng</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Lauk/Tempe Orek.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Tempe Orek</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="vegetable">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Sayur/Lalapan.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Lalapan</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Sayur/Oncom Leunca.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Oncom</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Sayur/Sayur Asem.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Sayur Asem</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Sayur/Sayur Bayam 3.png" class="card-img-top"
+                style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Sayur Bayem</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Sayur/Sayur Lodeh.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Sayur Lodeh</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Sayur/Sayur Pecel.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Sayur Pecel</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Sayur/Sayur Sop.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Soup</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/5. Ala Carte/Sayur/Tumis Bunga Pepaya.png" class="card-img-top"
+                style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Tumis Bunga Pepeaya</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="drink">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Minuman/Bandrek.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Bandrek</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Minuman/Es Campur.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Es Campur</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Minuman/Es Cendol.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Es Cendol</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Minuman/Es Cincau 2.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Es Cincau</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Minuman/Es Dawet 4.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Es Dawet</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Minuman/Es Puter.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Es Puter</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Minuman/Es Teler.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Es Teler</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Minuman/Tauwa.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Tauwa</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="party">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Perayaan/Nasi Bancaan.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Nasi Bancaan</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card food-card">
+              <img src="img/Perayaan/Nasi Kuning 3.png" class="card-img-top" style="object-position: 50% 75%;">
+              <div class="card-body">
+                <h2 class="card-title">Nasi Kuning</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id possimus?
+                  Qui, quos!.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
   <!--End of tabs category-->

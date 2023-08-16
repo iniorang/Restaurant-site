@@ -15,11 +15,18 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        @media (max-width: 576px) {
+            .mobile-image-top .card-img-top {
+                order: -1;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <!--Navigation Bar Start-->
-    <nav class="navbar navbar-expand navbar-scrolled" aria-label="Second navbar example">
+    <nav class="navbar navbar-expand-md navbar-scrolled" aria-label="Second navbar example">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <h3>Warung Hati</h3>
@@ -28,14 +35,16 @@
                 aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarsExample02">
-                <ul class="navbar-nav ml-auto ms-3">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarsExample02">
+                <ul class="navbar-nav me-auto ms-1">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="menu.html">Menu</a>
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="mealplans.html">Meal Plans</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="aboutus.html">About Us</a>
@@ -45,36 +54,58 @@
         </div>
     </nav>
     <!--End of Navbar-->
-    <div class="container my-5">
-        <div class="text-center">
-            <h3 class="heading" style="font-size: 60px;">Subscribe to our meal plan</h3>
+    <!-- Header -->
+    <div class="abouthead" style="background-image: url(./img/Jajanan/Bika\ Ambon.png);">
+        <div class="abouthead-overlay d-inline-flex p-2 align-items-center">
+            <div class="container w-75 text-center ">
+                <h1 class="text-center">Meal Plans</h1>
+            </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 mt-3">
-            <div class="col">
-                <div class="card meal-plans">
-                    <img class="plan-img" src="img/Menu_Utama/Nasi Pecel 2.png">
-                    <div class="card-body meal-plans">
-                        <h3 class="card-title text-center mb-3">Sapu Jagad</h3>
-                        <h6 class="card-subtitle text-center">Immune booster, increase energy and stamina</h6>
+    </div>
+    <!-- Header end -->
+    <!-- Content -->
+    <div class="container my-4">
+        <div class="card mb-3 ">
+            <div class="row gy-4">
+                <div class="col-md-5">
+                    <img src="img/Menu_Utama/Nasi Pecel 2.png" class="img-plans align-content-center rounded-start">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body ">
+                        <h1 class="heading">Sapu Jagad</h1>
+                        <h5 class="card-text mt-4 text-body-tertiary">Selection of healthy meals to support the immune
+                            system and improve
+                            stamina
+                        </h5>
+                        <h5 class=""><span class="fs-3 heading" style="color: #406343;">Goal </span>: Immune booster,
+                            increase energy and stamina</h5>
+                        <h5><span class="fs-3 heading">Menu </span>: Nasi Pecel Kacang Mente with Organic Tempeh Bacem</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">6 days package</li>
+                            <li class="list-group-item">2 healthy main course</li>
+                            <li class="list-group-item">1 healthy beverage (cold-pressed juice or smoothies)</li>
+                            <li class="list-group-item">1.500 calories/day</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card">
-                        <p>p</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card">
-                        <p>p</p>
+        </div>
+        <div class="container my-4">
+            <div class="card text-white overlay-card">
+                <img src="img/Jajanan/Asinan Bogor (2).png" class="card-img img-plans2" alt="...">
+                <div class="card-img-overlay container">
+                    <div class="container position-absolute top-50 start-100 translate-middle">
+                        <h1 class="heading">Sapu Jagad</h1>
+                        <h5 class="card-text mt-4 w-50">Selection of healthy meals to support the immune
+                            system and improve
+                            stamina
+                        </h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Content -->
     <!--Footer-->
     <footer class="footer pt-3">
         <div class="container">
