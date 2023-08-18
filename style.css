@@ -201,28 +201,35 @@ body {
 }
 
 /* Plans Card */
-.img-plans{
+.img-plans {
     height: 100%;
     width: 100%;
     object-fit: cover;
     position: relative;
 }
-.img-plans2{
-    max-height: 20cm;
+
+.img-plans2 {
+    height: 80vh;
     object-fit: cover;
     position: relative;
 }
 
+.plans-block-text-right {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+}
+
+.plans-block-text-left {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+}
+
+/* menu card */
 .food-card img {
-    height: 7cm;
+    height: 30vh;
     object-fit: cover;
 }
 
-/* Plans card */
-.card-body.meal-plans {
-    border-radius: 0%;
-    height: 180px;
-}
 
 /*Tabs on Category*/
 .nav-colorfirst .nav-item a {
