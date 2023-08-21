@@ -59,7 +59,8 @@ body {
 
 .abouthead {
     background-size: cover;
-    min-height: 40vh;
+    margin-top: 60px;
+    height: 55vh;
     position: relative;
     color: white;
     /* text-shadow: 2px 2px 2px rgba(0,0,0,.2); */
@@ -201,26 +202,21 @@ body {
 }
 
 /* Plans Card */
-.img-plans {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-}
 
-.img-plans2 {
+.img-plans {
     height: 80vh;
     object-fit: cover;
     position: relative;
+    filter: brightness(50%);
 }
 
 .plans-block-text-right {
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     margin-right: 20px;
 }
 
 .plans-block-text-left {
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     margin-left: 20px;
 }
 
