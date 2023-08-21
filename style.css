@@ -204,10 +204,11 @@ body {
 /* Plans Card */
 
 .img-plans {
-    height: 80vh;
+    height: 90vh;
     object-fit: cover;
     position: relative;
-    filter: brightness(50%);
+    filter: brightness(40%);
+    
 }
 
 .plans-block-text-right {
