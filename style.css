@@ -36,25 +36,13 @@ body {
 }
 
 .homehead-overlay h1 {
-    font-size: 20ex;
+    font-size: 24ex;
     font-family: 'Dancing Script', cursive;
     color: var(--color3);
 }
 
-@media (max-width:768px) {
-    .homehead {
-        min-height: 100vh;
-    }
-
-    .homehead-overlay h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-size: calc(1.525rem + 5.3vw);
-
-    }
+.homehead-overlay h5{
+    font-size: 20px;
 }
 
 .abouthead {
@@ -94,8 +82,6 @@ body {
 
     }
 }
-
-
 
 /*End Section of BG on index*/
 
@@ -141,16 +127,25 @@ body {
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
+/*End of Navbar*/
+
 .img-rest {
     width: 7cm;
-    height: 15cm;
+    height: 85vh;
     object-fit: cover;
-
-    @media (max-width:768px) {
-        width: 4cm;
-    }
 }
 
+.img-rest-2 {
+    width: 7cm;
+    height: 85vh;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+.welcome {
+    font-size: 85px;
+    font-family: 'Lobster', cursive;
+}
 
 .heading {
     font-size: 100px;
@@ -161,14 +156,12 @@ body {
     }
 }
 
-
-.about {
-    margin-top: 65px;
+.desk{
+    width: 50%;
 }
 
 .capt {
     font-size: 20px;
-    /* text-align: left; */
     line-height: 40px;
 }
 
@@ -176,9 +169,38 @@ body {
     .navbar {
         background-color: var(--color2);
     }
+
+    .welcome {
+        font-size: 45px;
+    }
+
+    .img-rest {
+        width: 4cm;
+        height: 45vh;
+    }
+
+    .img-rest-2 {
+        width: 4cm;
+        height: 45vh;
+        margin-top: 5px;
+    }
+
+    .homehead {
+        min-height: 100vh;
+    }
+    .desk{
+        width: 100%;
+    }
+
+    .homehead-overlay h1{
+        font-size: 51px;
+    }
+    
+    .homehead-overlay h5{
+        font-size: 15px;
+    }
 }
 
-/*End of Navbar*/
 
 /*Carousel recomendation*/
 
@@ -197,30 +219,32 @@ body {
 }
 
 /* Menu Card*/
-.food-card {
-    border-radius: 0px;
-}
 
 /* Plans Card */
 
 .img-plans {
-    height: 90vh;
+    max-height: 100vh;
     object-fit: cover;
     position: relative;
-    filter: brightness(40%);
-    
+    filter: brightness(65%);
 }
 
 .plans-block-text-right {
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(64, 99, 67, 0.65);
     margin-right: 20px;
+    padding: 5cm;
 }
 
 .plans-block-text-left {
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(64, 99, 67, 0.65);
     margin-left: 20px;
+    padding: 5cm;
 }
 
+.plan-img{
+    object-fit: fill;
+    width: 100%;
+}
 /* menu card */
 .food-card img {
     height: 30vh;
