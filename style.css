@@ -8,6 +8,10 @@ font-family: 'Ubuntu', sans-serif; */
     --color2: #406343;
     --color3: #ECE7B4;
     --color4: #F3EFCC;
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
 }
 
 
@@ -25,6 +29,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+<<<<<<< Updated upstream
 /*BG on index*/
 .homehead {
     background-size: cover;
@@ -89,6 +94,8 @@ body {
 
 /*End Section of BG on index*/
 
+=======
+>>>>>>> Stashed changes
 /*Navbar*/
 .navbar {
     transition: all 0.5s;
@@ -133,6 +140,74 @@ body {
 
 /*End of Navbar*/
 
+/*BG on index*/
+.homehead {
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+    /* text-shadow: 2px 2px 2px rgba(0,0,0,.2); */
+}
+
+.homehead-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.homehead-overlay h1 {
+    font-size: 30vh;
+    font-family: 'Dancing Script', cursive;
+    color: var(--color3);
+}
+
+.homehead-overlay h5{
+    font-size: 20px;
+}
+
+.abouthead {
+    background-size: cover;
+    margin-top: 60px;
+    height: 55vh;
+    position: relative;
+    color: white;
+    /* text-shadow: 2px 2px 2px rgba(0,0,0,.2); */
+}
+
+.abouthead-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.abouthead-overlay h1 {
+    font-size: 10ex;
+    font-family: 'Lobster', cursive;
+    color: var(--color3);
+}
+
+@media (max-width:768px) {
+    .abouthead {
+        min-height: 100vh;
+    }
+
+    .abouthead-overlay h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: calc(1.525rem + 5.3vw);
+
+    }
+
+
+}
+
+/*End Section of BG on index*/
+
 .img-rest {
     width: 7cm;
     height: 85vh;
@@ -166,7 +241,7 @@ body {
     line-height: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
     .navbar {
         background-color: var(--color2);
     }
@@ -187,7 +262,7 @@ body {
     }
 
     .homehead {
-        min-height: 100vh;
+        min-height: 80vh;
     }
     .desk{
         width: 100%;
@@ -200,7 +275,40 @@ body {
     .homehead-overlay h5{
         font-size: 15px;
     }
+
 }
+
+/* start of large tablet styles */
+@media (max-width: 900px) {
+    .navbar {
+        background-color: var(--color2);
+    }
+    .img-rest {
+        width: 4cm;
+        height: 45vh;
+    }
+    .img-rest-2 {
+        width: 4cm;
+        height: 45vh;
+    }
+
+    .welcome {
+        font-size: 55px;
+    }
+
+    .desk{
+        width: 50%;
+    }
+
+    .homehead-overlay h1{
+        font-size: 110px;
+    }
+    
+    .homehead-overlay h5{
+        font-size: 18px;
+    }
+
+    }
 
 
 /*Carousel recomendation*/
@@ -219,7 +327,6 @@ body {
     font-size: 20px;
 }
 
-/* Menu Card*/
 
 /* Plans Card */
 
@@ -246,6 +353,8 @@ body {
     object-fit: fill;
     width: 100%;
 }
+
+
 /* menu card */
 .food-card img {
     height: 30vh;
