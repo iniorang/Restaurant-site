@@ -1,22 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Ubuntu:wght@700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
 
 :root {
     --color1: #32502E;
     --color2: #406343;
     --color3: #ECE7B4;
     --color4: #F3EFCC;
-
 }
 
-* {
-    font-family: 'Roboto', sans-serif;
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Ubuntu', sans-serif;
+    
 }
+
 
 html,
 body {
     max-width: 100%;
     overflow-x: hidden;
+    /* background-color: var(--color4) !important; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*BG on index*/
@@ -37,7 +43,6 @@ body {
 
 .homehead-overlay h1 {
     font-size: 24ex;
-    font-family: 'Dancing Script', cursive;
     color: var(--color3);
 }
 
@@ -63,7 +68,6 @@ body {
 
 .abouthead-overlay h1 {
     font-size: 10ex;
-    font-family: 'Lobster', cursive;
     color: var(--color3);
 }
 
@@ -144,13 +148,10 @@ body {
 
 .welcome {
     font-size: 85px;
-    font-family: 'Lobster', cursive;
 }
 
 .heading {
     font-size: 100px;
-    font-family: 'Lobster', cursive;
-
     @media (max-width:768px) {
         font-size: 56px;
     }
