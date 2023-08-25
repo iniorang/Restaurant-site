@@ -42,12 +42,13 @@ body {
 }
 
 .homehead-overlay h1 {
-    font-size: 24ex;
+    font-size: 20ex;
     color: var(--color3);
 }
 
 .homehead-overlay h5{
     font-size: 20px;
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 .abouthead {
@@ -85,6 +86,10 @@ body {
         font-size: calc(1.525rem + 5.3vw);
 
     }
+}
+
+ul{
+    list-style-type: none;
 }
 
 /*End Section of BG on index*/
@@ -273,10 +278,10 @@ body {
 
 /*End of tabs*/
 
-.fa-square {
-    color: var(--color2);
+.contact-icon{
+    font-size: 30px;
+    
 }
-
 
 /*Footer*/
 .footer {

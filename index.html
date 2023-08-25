@@ -9,13 +9,9 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/959a4c3f11.js" crossorigin="anonymous"></script>
   <title>Home</title>
 </head>
 
@@ -69,7 +65,7 @@
       </div>
       <div class="col-md-6">
         <div class="container start-50 mt-3 mt-md-0">
-          <h1 class="welcome  text-start">Welcome to your life-changing journey </h1>
+          <h1 class="welcome text-start">Welcome to your life-changing journey </h1>
           <p class="capt text-start mt-3 mt-md-0"> Experience the authentic taste of Indonesia's cultural heritage with
             Warung Hati's
             cuisine. Our menu is crafted with indigenous herbs, spices, and natural ingredients that have been passed
@@ -127,7 +123,7 @@
             <div class="animate__animated animate__fadeInLeft">
               <h1 class="display-1 fw-bolder text-capitalize">Es Cendol</h1>
               <div class="desk">
-                <hr>                
+                <hr>
                 <p class="fs-5">Layers of joy—pandan rice boba, coconut milk, and palm sugar syrup. An icy indulgence
                   that's sweet, creamy, and utterly refreshing.</p>
               </div>
@@ -148,31 +144,52 @@
   <!--End of Best Pick-->
   <!--Contact-->
   <div class="container my-5 contact">
-    <h1 class="heading text-center fw-bold"> Contact Us</h1>
-    <h5 class="display-6 text-center fw-lighter">For reservation and information</h5>
-    <div class="container mt-2 text-center">
-      <div class="row mt-3 mb-5">
-        <div class="col-md-4 mt-md-0 mt-sm-3">
-          <span class="fa-stack fa-5x mb-2">
-            <i class="fa-solid fa-square fa-stack-2x"></i>
-            <i class="fa-brands fa-whatsapp fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4>(+62) 927 2194 196</h4>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col">
+        <div class="container">
+          <h1 class="display-1">Get in touch</h1>
+          <p class="fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid hic
+            cupiditate est.
+            Nisi,
+            sint. Amet odio libero ea adipisci? Expedita ut fugit perspiciatis sequi totam cumque iure laudantium rerum.
+          </p>
+          <div class="container text-md-center">
+            <ul>
+              <li><i class="bi-map-fill contact-icon"></i> Simo Gunung Barat Tol 3/22D</li>
+              <li><i class="bi-telephone-fill contact-icon"></i> Simo Gunung Barat Tol 3/22D</li>
+              <li><i class="bi-envelope contact-icon"></i> Simo Gunung Barat Tol 3/22D</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-4 mt-md-0 mt-sm-3">
-          <span class="fa-stack fa-5x mb-2">
-            <i class="fa-solid fa-square fa-stack-2x"></i>
-            <i class="fa-regular fa-envelope fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4>tambakarna@greendike.com</h4>
-        </div>
-        <div class="col-md-4 mt-md-0 mt-sm-3">
-          <span class="fa-stack fa-5x mb-2">
-            <i class="fa-solid fa-square fa-stack-2x"></i>
-            <i class="fa-solid fa-map fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4>Coming soon</h4>
-        </div>
+      </div>
+      <div class="col px-5">
+        <form action="mailto:example@mail.com" method="post" enctype="text/plain">
+          <div class="row">
+
+            <div class="col-md-12 form-group">
+              <label for="name" class="col-form-label">Name</label>
+              <input type="text" class="form-control" name="name" required id="name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <label for="email" class="col-form-label">Email</label>
+              <input type="text" class="form-control" name="email" required id="email">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <label for="message" class="col-form-label">Message</label>
+              <textarea class="form-control" name="message" id="message" cols="30" rows="7" required></textarea>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+              <span class="submitting"></span>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -216,5 +233,9 @@
     }
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 
 </html>
