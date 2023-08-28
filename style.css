@@ -347,6 +347,9 @@ ul{
     width: 100%;
 }
 
+.btn-color{
+    background-color: var(--color2);
+}
 
 /* menu card */
 .food-card img {
@@ -377,7 +380,7 @@ ul{
 
 .contact-icon{
     font-size: 30px;
-    
+    color: var(--color2);
 }
 
 /*Footer*/
