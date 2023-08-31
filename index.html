@@ -17,16 +17,16 @@
 
 <body>
   <!--Navigation Bar Start-->
-  <nav class="navbar navbar-expand-md fixed-top" aria-label="Second navbar example">
+  <nav class="navbar navbar-expand-md fixed-top " aria-label="Second navbar example">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <h3>Warung Hati</h3>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
-        aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarsExample02">
+      <a class="btn d-md-none" data-bs-toggle="offcanvas" href="#offcanvasNav" role="button"
+        aria-controls="offcanvasNav">
+        <i class="fa-solid fa-bars" style="color: white;"></i>
+      </a>
+      <div class="d-none d-md-block" id="navbarsExample02">
         <ul class="navbar-nav me-auto ms-1">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -44,6 +44,38 @@
       </div>
     </div>
   </nav>
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasNav"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h3 class="offcanvas-title text-white" id="offcanvasRightLabel">Warung Hati</h3>
+      <button type="button" class="btn-close end-100" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="nav-canvas">
+        <div class="link-canvas">
+          <a href="index.html">
+            <h1>Home</h1>
+          </a>
+        </div>
+        <div class="link-canvas">
+          <a href="menu.html">
+            <h1>Menu</h1>
+          </a>
+        </div>
+        <div class="link-canvas">
+          <a href="mealplans.html">
+            <h1>Meal Plans</h1>
+          </a>
+        </div>
+        <div class="link-canvas">
+          <a href="aboutus.html">
+            <h1>About Us</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--End of Navbar-->
   <!--Hero start-->
   <div class="homehead" style="background-image: url(./img/Front_Page/NasiCampurBali.png);">
@@ -64,13 +96,14 @@
         <img src="img/5. Ala Carte/Sayur/Sayur Asem.png" class="img-rest-2">
       </div>
       <div class="col-md-6">
-        <div class="container start-50 mt-3 mt-md-0">
-          <h1 class="welcome text-start">Welcome to your life-changing journey </h1>
-          <p class="capt text-start mt-3 mt-md-0"> Experience the authentic taste of Indonesia's cultural heritage with
+        <div class="container mt-3 mt-md-0">
+          <h1 class="welcome-index text-start">Welcome to your life-changing journey </h1>
+          <p class="capt-index text-start mt-6 mt-md-4"> Experience the authentic taste of Indonesia's cultural heritage
+            with
             Warung Hati's
             cuisine. Our menu is crafted with indigenous herbs, spices, and natural ingredients that have been passed
             down from our ancestors. We believe that this wisdom is the key to achieving the balance between humans and
-            nature, and is also the secret to prime health and longevity..</p>
+            nature, and is also the secret to prime health and longevity</p>
         </div>
       </div>
     </div>
@@ -86,26 +119,55 @@
         <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active c-item">
-          <img src="img/Menu_Utama/Nasi Gudeg Jogja.png" class="d-block w-100 c-img" alt="Slide 1">
+          <img src="img/Menu_Utama/Nasi Timbel Wide.png" class="d-block w-100 c-img"
+            style="object-position: 50% 90% !important;" alt="Slide 1">
+          <div class="carousel-caption top-50 translate-middle-y text-start">
+            <div class="animate__animated animate__fadeInLeft">
+              <h1 class="display-1 fw-bolder text-capitalize">Nasi Timbel</h1>
+              <div class="desk">
+                <hr>
+                <p class="fs-5">A whole food meal from Sundanese consisting of Sayur Asem, sambal, ungkep kampong
+                  chicken, and organic rice wrapped with banana leaves</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="img/Menu_Utama/Gado-Gado 3.png" class="d-block w-100 c-img"
+            style="object-position: 50% 50% !important;" alt="Slide 2">
+          <div class="carousel-caption top-50 translate-middle-y text-start">
+            <div class="animate__animated animate__fadeInLeft">
+              <h1 class="display-1 fw-bolder text-capitalize">Gado-Gado</h1>
+              <div class="desk">
+                <hr>
+                <p class="fs-5">A mix of steamed and raw vegetables, fried tofu, and boiled egg, with creamy
+                  sweet-savory cashew dressing. Javanese Island's most popular salad! Every city in Java has its style
+                  of this salad but with one similarity: delicious!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="img/Menu_Utama/Nasi Gudeg Jogja.png" class="d-block w-100 c-img" alt="Slide 3">
           <div class="carousel-caption top-50 translate-middle-y text-start">
             <div class="animate__animated animate__fadeInLeft">
               <h1 class="display-1 fw-bolder text-capitalize">Gudeg Jogja</h1>
               <div class="desk">
                 <hr>
-                <p class="fs-5">A mix of steamed and raw vegetables, fried tofu, and boiled egg, with creamy
-                  sweet-savory cashew dressing. Javanese Island's most popular salad! Every city in Java has its style
-                  of
-                  this salad but with one similarity: delicious?</p>
+                <p class="fs-5">Unlock Java's heart with sweetly stewed young jackfruit. A fragrant blend of coconut
+                  milk, palm sugar, and spices weaves a captivating tale of flavors.
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item c-item">
           <img src="img/Jajanan/Jajan Pasar 5.png" class="d-block w-100 c-img"
-            style="object-position: 50% 90% !important;" alt="Slide 2">
+            style="object-position: 50% 90% !important;" alt="Slide 4">
           <div class="carousel-caption top-50 translate-middle-y text-start">
             <div class="animate__animated animate__fadeInLeft">
               <h1 class="display-1 fw-bolder text-capitalize">Jajanan Pasar</h1>
@@ -119,7 +181,7 @@
         </div>
         <div class="carousel-item c-item">
           <img src="img/Minuman/Es Cendol.png" class="d-block w-100 c-img" style="object-position: 50% 90% !important;"
-            alt="Slide 3">
+            alt="Slide 5">
           <div class="carousel-caption top-50 translate-middle-y text-start">
             <div class="animate__animated animate__fadeInLeft">
               <h1 class="display-1 fw-bolder text-capitalize">Es Cendol</h1>
@@ -127,20 +189,6 @@
                 <hr>
                 <p class="fs-5">Layers of joy—pandan rice boba, coconut milk, and palm sugar syrup. An icy indulgence
                   that's sweet, creamy, and utterly refreshing.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item c-item">
-          <img src="img/Menu_Utama/Nasi Timbel Wide.png" class="d-block w-100 c-img"
-            style="object-position: 50% 90% !important;" alt="Slide 3">
-          <div class="carousel-caption top-50 translate-middle-y text-start">
-            <div class="animate__animated animate__fadeInLeft">
-              <h1 class="display-1 fw-bolder text-capitalize">Nasi Timbel</h1>
-              <div class="desk">
-                <hr>
-                <p class="fs-5">A whole food meal from Sundanese consisting of Sayur Asem, sambal, ungkep kampong
-                  chicken, and organic rice wrapped with banana leaves</p>
               </div>
             </div>
           </div>
@@ -167,7 +215,6 @@
             contact us using the form beside or contact on below. We are ready to assist you with pleasure!</p>
           <div class="container text-md-center">
             <ul>
-              <li><i class="bi-map-fill contact-icon"></i> Simo Gunung Barat Tol 3/22D</li>
               <li><i class="bi-telephone-fill contact-icon"></i> Simo Gunung Barat Tol 3/22D</li>
               <li><i class="bi-envelope contact-icon"></i> Simo Gunung Barat Tol 3/22D</li>
             </ul>

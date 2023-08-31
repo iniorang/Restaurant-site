@@ -20,16 +20,16 @@
 
 <body>
   <!--Navigation Bar Start-->
-  <nav class="navbar navbar-expand-md fixed-top navbar-scrolled" aria-label="Second navbar example">
+  <nav class="navbar navbar-expand-md navbar-scrolled fixed-top " aria-label="Second navbar example">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <h3>Warung Hati</h3>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
-        aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarsExample02">
+      <a class="btn d-md-none" data-bs-toggle="offcanvas" href="#offcanvasNav" role="button"
+        aria-controls="offcanvasNav">
+        <i class="fa-solid fa-bars" style="color: white;"></i>
+      </a>
+      <div class="d-none d-md-block" id="navbarsExample02">
         <ul class="navbar-nav me-auto ms-1">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="index.html">Home</a>
@@ -47,6 +47,38 @@
       </div>
     </div>
   </nav>
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasNav"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h3 class="offcanvas-title text-white" id="offcanvasRightLabel">Warung Hati</h3>
+      <button type="button" class="btn-close end-100" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="nav-canvas">
+        <div class="link-canvas">
+          <a href="index.html">
+            <h1>Home</h1>
+          </a>
+        </div>
+        <div class="link-canvas">
+          <a href="menu.html">
+            <h1>Menu</h1>
+          </a>
+        </div>
+        <div class="link-canvas">
+          <a href="mealplans.html">
+            <h1>Meal Plans</h1>
+          </a>
+        </div>
+        <div class="link-canvas">
+          <a href="aboutus.html">
+            <h1>About Us</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--End of Navbar-->
   <!--Tabs of category-->
   <div class="abouthead" style="background-image: url(./img/Front_Page/NasiCampurBali.png);">
@@ -93,7 +125,7 @@
   <div class="tab-content my-5">
     <div class="tab-pane active show" id="primary">
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col">
             <div class="card food-card">
               <img src="img/Menu_Utama/Asinan Betawi.png" class="card-img-top" style="object-position: 50% 75%;">
@@ -231,7 +263,8 @@
               <img src="img/Menu_Utama/Nasi Timbel 2.png" class="card-img-top">
               <div class="card-body">
                 <h2 class="card-title">Nasi Timbel</h2>
-                <p class="card-text"> A whole food meal from Sundanese consisting of Sayur Asem, sambal, ungkep kampong chicken, and organic rice wrapped with banana leaves.</p>
+                <p class="card-text"> A whole food meal from Sundanese consisting of Sayur Asem, sambal, ungkep kampong
+                  chicken, and organic rice wrapped with banana leaves.</p>
               </div>
             </div>
           </div>
@@ -240,7 +273,7 @@
     </div>
     <div class="tab-pane" id="snack">
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col">
             <div class="card food-card">
               <img src="img/Jajanan/Asinan Bogor (2).png" class="card-img-top" style="object-position: 50% 50%;">
@@ -386,7 +419,7 @@
     </div>
     <div class="tab-pane" id="side">
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col">
             <div class="card food-card">
               <img src="img/5. Ala Carte/Lauk/Ayam Bakar.png" class="card-img-top" style="object-position: 50% 75%;">
@@ -534,7 +567,7 @@
     </div>
     <div class="tab-pane" id="vegetable">
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col">
             <div class="card food-card">
               <img src="img/5. Ala Carte/Sayur/Lalapan.png" class="card-img-top" style="object-position: 50% 75%;">
@@ -623,7 +656,7 @@
     </div>
     <div class="tab-pane" id="drink">
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col">
             <div class="card food-card">
               <img src="img/Minuman/Bandrek.png" class="card-img-top" style="object-position: 50% 75%;">
@@ -699,7 +732,7 @@
     </div>
     <div class="tab-pane" id="party">
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col">
             <div class="card food-card">
               <img src="img/Perayaan/Nasi Bancaan.png" class="card-img-top" style="object-position: 50% 75%;">
