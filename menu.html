@@ -85,8 +85,8 @@
     <div class="abouthead-overlay d-inline-flex p-2 align-items-center">
       <div class="container text-center ">
         <h1 class="text-center">Warung Hati Greatest Creation</h1>
-        <div class="container mt-3">
-          <ul class="nav nav-colorfirst justify-content-center mt-3 " id="Food-Tab">
+        <div class="container d-none d-md-block d-lg-block d-xl-block d-xxl-block mt-3">
+          <ul class="nav nav-colorfirst justify-content-center mt-3" id="Food-Tab">
             <li class="nav-item">
               <a href="#primary" class="nav-link active" data-bs-toggle="tab">
                 <p>Main</p>
@@ -119,8 +119,19 @@
             </li>
           </ul>
         </div>
+        <div class="container d-md-none d-lg-none d-xl-none d-xxl-none">
+          <select class="form-select" id="Food-tab" aria-label="Navigation for category">
+            <option value="#primary" data-bs-toggle="tab" selected>Main</option>
+            <option value="#snack" data-bs-toggle="tab">Snack</option>
+            <option value="#side" data-bs-toggle="tab">Side</option>
+            <option value="#vegetable" data-bs-toggle="tab">Veggies</option>
+            <option value="#drink" data-bs-toggle="tab">Beverage</option>
+            <option value="#party" data-bs-toggle="tab">Party</option>
+          </select>
+        </div>
       </div>
     </div>
+  </div>
   </div>
   <div class="tab-content my-5">
     <div class="tab-pane active show" id="primary">
@@ -790,6 +801,16 @@
   </footer>
   <!--End of Footer-->
 </body>
+<script>
+  document.getElementById('Food-tab').addEventListener('change', function () {
+    var selectedTab = this.value;
+    var tabContent = document.querySelectorAll('.tab-pane');
+    for (var i = 0; i < tabContent.length; i++) {
+      tabContent[i].classList.remove('show', 'active');
+    }
+    document.querySelector(selectedTab).classList.add('show', 'active');
+  });
 </script>
+
 
 </html>

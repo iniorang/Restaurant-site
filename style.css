@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@700&display=swap');
 
+
 /* 
     font-family: 'Open Sans', sans-serif; pargraph
     font-family: 'Ubuntu', sans-serif; Heading */
@@ -78,7 +79,6 @@
 .link-canvas h1:hover {
     color: var(--color3) !important;
 }
-
 /* End of offcanvas */
 h1,
 h2,
