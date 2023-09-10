@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@700&display=swap');
 
 /* 
-font-family: 'Nunito', sans-serif;
-font-family: 'Roboto', sans-serif; */
+    font-family: 'Open Sans', sans-serif; pargraph
+    font-family: 'Ubuntu', sans-serif; Heading */
 :root {
     --color1: #32502e;
     --color2: #406343;
@@ -86,9 +86,10 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
-h1{
+
+h1 {
     font-size: 3em;
 }
 
@@ -97,9 +98,9 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     /* background-color: var(--color4) !important; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    line-height: 1.375em;
+    line-height: 28px;
 }
 
 
@@ -178,21 +179,31 @@ ul {
 }
 
 .welcome-index {
-    font-size: 85px;
+    font-size: 48px;
     border-left: 7px solid var(--color2);
     padding-left: 10px;
-    line-height: 70px;
+    line-height: 48px;
 }
 
 .capt-index {
     font-size: 20px;
-    line-height: 40px;
+    line-height: 48px;
 }
 
 .desk {
     width: 50%;
 }
 
+.c-item {
+    height: 18cm;
+}
+
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
 
 /* Phone Style */
 @media (max-width: 799px) {
@@ -263,15 +274,6 @@ ul {
 
 /*Carousel recomendation*/
 
-.c-item {
-    height: 18cm;
-}
-
-.c-img {
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
-}
 
 
 /* heading bg*/
@@ -311,6 +313,7 @@ ul {
 
     }
 }
+
 /* End of heading bg */
 
 /* Plans Card */
@@ -352,7 +355,7 @@ ul {
     border-radius: 50%;
     width: 6cm;
     height: 6cm;
-    object-fit: cover;  
+    object-fit: cover;
 }
 
 /* End of plan */
@@ -375,8 +378,10 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Background color for the text overlay */
-    color: white; /* Text color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Background color for the text overlay */
+    color: white;
+    /* Text color */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -385,24 +390,30 @@ ul {
     border-radius: 5px;
     transition: background .5s ease, transform .2s ease;
 }
-.nav-link.active .image-container img{
+
+.nav-link.active .image-container img {
     filter: grayscale(0%);
     transform: scale(1.1);
 }
+
 .nav-link.active .text-overlay {
-    background: rgba(0, 0, 0, 0.4); /* Make the background transparent when selected */
-    transform: scale(1.1); /* Optional: Enlarge the text overlay slightly when selected */
+    background: rgba(0, 0, 0, 0.4);
+    /* Make the background transparent when selected */
+    transform: scale(1.1);
+    /* Optional: Enlarge the text overlay slightly when selected */
 }
 
-.nav-link.active .text-overlay h1
-{
+.nav-link.active .text-overlay h1 {
     color: var(--color3);
 }
+
 .text-overlay h1 {
-    transition: color 0.3s ease; /* Add a color transition */
+    transition: color 0.3s ease;
+    /* Add a color transition */
     font-size: 40px;
 }
-.text-overlay h1:hover{
+
+.text-overlay h1:hover {
     color: var(--color3) !important;
 }
 
@@ -452,15 +463,39 @@ ul {
     background-color: rgba(0, 0, 0, .6);
 }
 
-.comit-overlay h1 {
-
+.grey-line {
+    background-color: #ccc;
+    height: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.commit-overlay h5 {
-
+.commit-card {
+    width: 100%;
+    min-height: 20cm;
+    padding: 20px 0px 20px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack child elements vertically */
+}
+.commit-card p{
+    flex-grow: 1;
+    font-size: 17.6px;
+    text-align: justify;
 }
 
+.commit-title {
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 5px;
+    height: 20dvh;
+}
 
+.commit-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 
 
 /* End of about us */
