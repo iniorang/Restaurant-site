@@ -89,9 +89,6 @@ h6 {
     font-family: 'Ubuntu', sans-serif;
 }
 
-h1 {
-    font-size: 3em;
-}
 
 html,
 body {
@@ -99,10 +96,9 @@ body {
     overflow-x: hidden;
     /* background-color: var(--color4) !important; */
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 28px ;
+    font-size: 20px;
+    line-height: 24px;
 }
-
 
 
 /*BG on index*/
@@ -185,10 +181,6 @@ ul {
     line-height: 48px;
 }
 
-.capt-index {
-    font-size: 20px;
-    line-height: 48px;
-}
 
 .desk {
     width: 50%;
@@ -241,6 +233,7 @@ ul {
     .homehead-overlay h5 {
         font-size: 3.80dvw;
     }
+
 }
 
 /* start of large tablet styles */
@@ -279,7 +272,7 @@ ul {
 .abouthead {
     background-size: cover;
     margin-top: 60px;
-    height: 55vh;
+    height: 50vh;
     position: relative;
     color: white;
     /* text-shadow: 2px 2px 2px rgba(0,0,0,.2); */
@@ -293,13 +286,13 @@ ul {
 }
 
 .abouthead-overlay h1 {
-    font-size: 10ex;
+    font-size: 5dvw;
     color: var(--color3);
 }
 
 @media (max-width:768px) {
     .abouthead {
-        min-height: 100vh;
+        min-height: 30vh;
     }
 
     .abouthead-overlay h1,
@@ -309,7 +302,6 @@ ul {
     h5,
     h6 {
         font-size: calc(1.525rem + 5.3vw);
-
     }
 }
 
@@ -422,21 +414,21 @@ ul {
 
 /* menu card */
 .food-card img {
-    height: 30vh;
+    height: 32%;
+    width: 100%;
     object-fit: cover;
     border-radius: 0px;
 }
 .card.food-card{
-    /* font-size: 16px; */
-    line-height: 25px;
-    height: 13cm;
     border-radius: 0cm;
+    height: 14cm;
     /* border: 0px; */
 }
 .card.food-card .card-body .card-title{
-    height: 2.1cm;
+    height: 10dvh;
+    margin-bottom: 40px;
     text-align: center;
-    line-height: 28px !important;
+    line-height: 38px;
 }
 
 /*Tabs on Category*/
@@ -497,12 +489,10 @@ ul {
 }
 
 .commit-title {
-    margin-top: 10px;
-    /* text-align: center; */
-    height: 13vh;
-    /* margin-bottom: 5px; */
-    line-height: 28px;
-    /* background-color: #406343; */
+    margin-top: 12px;
+    padding-bottom: 15dvh;
+    height: 5dvh;
+    line-height: 32px;
 }
 
 .commit-img {
