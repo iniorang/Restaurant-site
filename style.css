@@ -100,7 +100,7 @@ body {
     /* background-color: var(--color4) !important; */
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 28px ;
 }
 
 
@@ -259,7 +259,6 @@ ul {
     .welcome-index {
         font-size: 55px;
     }
-
 
     .homehead-overlay h1 {
         font-size: 110px;
@@ -423,10 +422,22 @@ ul {
 
 /* menu card */
 .food-card img {
-    height: 50dvh;
+    height: 30vh;
     object-fit: cover;
+    border-radius: 0px;
 }
-
+.card.food-card{
+    /* font-size: 16px; */
+    line-height: 25px;
+    height: 13cm;
+    border-radius: 0cm;
+    /* border: 0px; */
+}
+.card.food-card .card-body .card-title{
+    height: 2.1cm;
+    text-align: center;
+    line-height: 28px !important;
+}
 
 /*Tabs on Category*/
 .nav-colorfirst .nav-item a {
@@ -474,21 +485,24 @@ ul {
     width: 100%;
     min-height: 20cm;
     padding: 20px 0px 20px 0px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
     display: flex; /* Use flexbox */
     flex-direction: column; /* Stack child elements vertically */
 }
 .commit-card p{
     flex-grow: 1;
-    font-size: 17.6px;
+    font-size: 18px;
     text-align: justify;
+    line-height: 28px !important;
 }
 
 .commit-title {
     margin-top: 10px;
-    text-align: center;
-    padding-bottom: 5px;
-    height: 20dvh;
+    /* text-align: center; */
+    height: 13vh;
+    /* margin-bottom: 5px; */
+    line-height: 28px;
+    /* background-color: #406343; */
 }
 
 .commit-img {
