@@ -313,14 +313,13 @@ ul {
     outline-width: 100px;
     padding: 20px 20px;
     outline: .5px solid black;
-    height: 30cm;
+    height: 35cm;
     background-color: var(--color2);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    /* margin: 10px; */
 }
 
 .card-plan p {
