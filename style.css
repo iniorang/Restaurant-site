@@ -162,13 +162,13 @@ ul {
 /*End Section of Hero on index*/
 
 .img-rest {
-    width: 7cm;
+    width: 100%;
     height: 17cm;
     object-fit: cover;
 }
 
 .img-rest-2 {
-    width: 7cm;
+    width: 100%;
     height: 17cm;
     object-fit: cover;
     margin-top: 50px;
@@ -181,7 +181,6 @@ ul {
     line-height: 48px;
 }
 
-
 .desk {
     width: 50%;
 }
@@ -189,7 +188,6 @@ ul {
 .c-item {
     height: 18cm;
 }
-
 
 .c-img {
     height: 100%;
@@ -246,7 +244,7 @@ ul {
     .img-rest-2 {
         width: 4cm;
         height: 17cm;
-        margin-top: 0px;
+        margin-top: 50px;
     }
 
     .welcome-index {
@@ -272,7 +270,7 @@ ul {
 .abouthead {
     background-size: cover;
     margin-top: 60px;
-    height: 50vh;
+    height: 100dvh;
     position: relative;
     color: white;
     /* text-shadow: 2px 2px 2px rgba(0,0,0,.2); */
@@ -282,7 +280,7 @@ ul {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .6);
 }
 
 .abouthead-overlay h1 {
@@ -346,6 +344,20 @@ ul {
     width: 6cm;
     height: 6cm;
     object-fit: cover;
+}
+/* Phone Style */
+@media (max-width: 799px) {
+}
+
+/* start of large tablet styles */
+@media screen and (min-width: 800px) and (max-width: 1080px) {
+    .img-plans {
+        width: 3.5cm;
+        height: 4cm;
+    }
+    .card-plan{
+        height: 50cm;
+    }
 }
 
 /* End of plan */
@@ -429,6 +441,23 @@ ul {
     text-align: center;
     line-height: 38px;
     display: block;
+}
+
+/* Phone Style */
+@media (max-width: 799px) {
+    .card.food-card .card-body .card-title{
+        height: 2dvh;
+    }
+    .food-card img {
+        height: 6cm;
+    }
+}
+
+/* start of large tablet styles */
+@media screen and (min-width: 800px) and (max-width: 1080px) {
+    .card.food-card .card-body .card-title{
+        height: 35dvh;
+    }
 }
 
 /*Tabs on Category*/
