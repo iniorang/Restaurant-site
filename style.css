@@ -290,7 +290,7 @@ ul {
 
 @media (max-width:768px) {
     .abouthead {
-        height: 30dvh;
+        height: 60dvh;
     }
 
     .abouthead-overlay h1,
