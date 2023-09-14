@@ -270,7 +270,7 @@ ul {
 .abouthead {
     background-size: cover;
     margin-top: 60px;
-    height: 100dvh;
+    height: 85dvh;
     position: relative;
     color: white;
     /* text-shadow: 2px 2px 2px rgba(0,0,0,.2); */
@@ -290,7 +290,7 @@ ul {
 
 @media (max-width:768px) {
     .abouthead {
-        min-height: 30vh;
+        height: 30dvh;
     }
 
     .abouthead-overlay h1,
@@ -486,6 +486,10 @@ ul {
     position: relative;
     color: white;
     /* text-shadow: 2px 2px 2px rgba(0,0,0,.2); */
+}
+
+.abouttext{
+    text-align: justify;
 }
 
 .comit-overlay {
