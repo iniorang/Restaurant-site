@@ -288,7 +288,7 @@ ul {
     color: var(--color3);
 }
 
-@media (max-width:768px) {
+@media (max-width: 799px) {
     .abouthead {
         height: 60dvh;
     }
@@ -300,6 +300,54 @@ ul {
     h5,
     h6 {
         font-size: calc(1.525rem + 5.3vw);
+    }
+
+    .nav-colorfirst .nav-item a {
+        color: white;
+        font-size: 30px;
+    }
+    
+    .nav-colorfirst .nav-item a:hover {
+        color: var(--color3);
+        transition: color 1s ease;
+    }
+    
+    .nav-colorfirst .nav-item a.active {
+        color: var(--color4);
+        font-size: 30px;
+        transition: all 1s;
+        text-decoration: underline;
+    }
+}
+
+/* start of large tablet styles */
+@media screen and (min-width: 800px) and (max-width: 1080px) {
+    .abouthead {
+        height: 40dvh;
+    }
+    .abouthead-overlay h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: calc(1.525rem + 4.3vw);
+    }
+    .nav-colorfirst .nav-item a {
+        color: white;
+        font-size: 30px;
+    }
+    
+    .nav-colorfirst .nav-item a:hover {
+        color: var(--color3);
+        transition: color 1s ease;
+    }
+    
+    .nav-colorfirst .nav-item a.active {
+        color: var(--color4);
+        font-size: 30px;
+        transition: all 1s;
+        text-decoration: underline;
     }
 }
 
@@ -456,8 +504,10 @@ ul {
 /* start of large tablet styles */
 @media screen and (min-width: 800px) and (max-width: 1080px) {
     .card.food-card .card-body .card-title{
-        height: 35dvh;
+        height: 4dvh;
     }
+
+    
 }
 
 /*Tabs on Category*/
