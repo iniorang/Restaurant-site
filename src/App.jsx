@@ -1,9 +1,10 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar'
-import MainPage from './pages/MainPage'
 import Footer from './components/footer'
 
+import MainPage from './pages/MainPage'
+import MenuPage from './pages/menuPage'
 
 function AboutPage() {
   return (
@@ -18,16 +19,6 @@ function AboutPage() {
   )
 }
 
-function MenuPage() {
-  return (
-    <main>
-      <section className="page-section">
-        <h1>Menu</h1>
-        <p>Explore Warung Hati&apos;s greatest creations and signature dishes.</p>
-      </section>
-    </main>
-  )
-}
 
 function MealPlansPage() {
   return (

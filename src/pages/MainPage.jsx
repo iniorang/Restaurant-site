@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
+import { Button, ButtonOutlined } from "../components/button";
 import Carrousel from "../components/carrousel";
 
 export default function MainPage() {
+    const navigate = useNavigate();
     const foodRecommendations = [
         {
             title: "Nasi Campur Bali",
@@ -25,36 +28,28 @@ export default function MainPage() {
                 <div className="flex flex-row justify-between pl-15 pr-5 py-5 w-full h-full">
                     <div className="flex flex-col justify-center max-w-4xl">
                         <h1 className="text-white font-extrabold text-8xl mb-5">
-                            Lorem ipsum dolor sit
+                            Warung Hati
                         </h1>
                         <h2 className="text-white text-lg max-w-xl mb-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.
+                            The Authentic Indonesia’s Heritage Cuisine with Organic and Natural Ingredients
                         </h2>
                         <section className="flex items-center gap-5" id="cta">
-                            <button className="text-white font-bold py-2 px-4 rounded bg-accent hover:bg-accent-dark">
-                                Explore Menu
-                            </button>
-                            <button className="text-white font-bold py-2 px-4 rounded border-2 border-accent hover:border-accent-dark">
-                                Learn More
-                            </button>
+                            <Button name="Explore Menu" onClick={() => navigate('/menu')} />
+                            <ButtonOutlined name="Learn More" onClick={() => navigate('/about')} />
                         </section>
-                    </div>
-                    <div className="bg-white/50 p-5 hidden md:flex md:flex-col rounded-lg text-end self-end">
-                        <p>Nama Makanan</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
                     </div>
                 </div>
             </section>
-            <section className="bg-background py-24 px-4" id="short-intro">
+            <section className="bg-background py-40 px-4" id="short-intro">
                 <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                     <div className="md:relative hidden md:block h-full w-full">
                         <img
-                            src="\assets\img\Utama\NasiBetutu.png"
+                            src="/assets/img/Utama/NasiBetutu.png"
                             alt="Freshly cooked meal"
                             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10/12 h-auto object-cover rounded-lg shadow-xl transform -rotate-3"
                         />
                         <img
-                            src="\assets\img\aboutus\OurPartnerOrganicFarmerFromSidoarjo.jpeg"
+                            src="/assets/img/aboutus/OurPartnerOrganicFarmerFromSidoarjo.jpeg"
                             alt="Our local farmer"
                             className="absolute top-5 left-5 w-4/12 h-auto object-cover rounded-lg shadow-lg border-4 border-white transform rotate-6"
                         />
@@ -65,15 +60,11 @@ export default function MainPage() {
                         />
                     </div>
                     <div className="flex flex-col">
-                        <h3 className="text-secondary font-bold text-lg mb-2">Welcome to Warung Hati</h3>
-                        <h2 className="text-5xl font-extrabold text-gray-800 mb-6 leading-tight">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        <h2 className="text-5xl font-extrabold text-primary mb-6 leading-tight">
+                            Welcome to your life-changing journey
                         </h2>
-                        <p className="text-gray-600 mb-4 text-lg">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptates praesentium quia, eveniet tenetur incidunt dicta maiores fuga quasi provident illum est atque. Quaerat sequi, enim dicta libero voluptas nemo.
-                        </p>
-                        <p className="text-gray-600 text-lg">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa amet expedita corrupti aliquam commodi porro
+                        <p className="mb-4 text-lg">
+                            Experience the authentic taste of Indonesia's cultural heritage with Warung Hati's cuisine. Our menu is crafted with indigenous herbs, spices, and natural ingredients that have been passed down from our ancestors. We believe that this wisdom is the key to achieving the balance between humans and nature, and is also the secret to prime health and longevity.
                         </p>
                     </div>
                 </div>
